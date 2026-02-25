@@ -62,57 +62,57 @@
   --radius: 0.75rem;
 
   /* ── Surfaces ─────────────────────────────────── tw/rdx references ──── */
-  --background: #f7f9ff;              /* → {indigo.2}  rdx */
-  --foreground: #0f172a;              /* → {slate.900} tw  */
+  --background: #f7f9ff; /* → {indigo.2}  rdx */
+  --foreground: #0f172a; /* → {slate.900} tw  */
 
-  --card: #fbfdff;                    /* → {blue.1}    rdx */
-  --card-foreground: #0f172a;         /* → {slate.900} tw  */
+  --card: #fbfdff; /* → {blue.1}    rdx */
+  --card-foreground: #0f172a; /* → {slate.900} tw  */
 
-  --popover: #fbfdff;                 /* → {blue.1}    rdx */
-  --popover-foreground: #0f172a;      /* → {slate.900} tw  */
+  --popover: #fbfdff; /* → {blue.1}    rdx */
+  --popover-foreground: #0f172a; /* → {slate.900} tw  */
 
   /* ── Brand ────────────────────────────────────────────────────────────── */
-  --primary: #2563eb;                 /* → {blue.600}  tw  */
-  --primary-foreground: #fcfcfc;      /* → {gray.1}    rdx */
+  --primary: #2563eb; /* → {blue.600}  tw  */
+  --primary-foreground: #fcfcfc; /* → {gray.1}    rdx */
 
-  --secondary: #e0e7ff;              /* → {indigo.100} tw  */
-  --secondary-foreground: #1f2d5c;   /* → {indigo.12}  rdx */
+  --secondary: #e0e7ff; /* → {indigo.100} tw  */
+  --secondary-foreground: #1f2d5c; /* → {indigo.12}  rdx */
 
   /* ── Muted ────────────────────────────────────────────────────────────── */
-  --muted: #edf2fe;                   /* → {indigo.3}  rdx */
-  --muted-foreground: #64748b;        /* → {slate.500} tw  */
+  --muted: #edf2fe; /* → {indigo.3}  rdx */
+  --muted-foreground: #64748b; /* → {slate.500} tw  */
 
   /* ── Accent / CTA ─────────────────────────────────────────────────────── */
-  --accent: #f76b15;                  /* → {orange.9}  rdx */
-  --accent-foreground: #fcfcfc;       /* → {gray.1}    rdx */
+  --accent: #f76b15; /* → {orange.9}  rdx */
+  --accent-foreground: #fcfcfc; /* → {gray.1}    rdx */
 
-  --cta: #f76b15;                     /* → {orange.9}  rdx */
-  --cta-foreground: #fcfcfc;          /* → {gray.1}    rdx */
+  --cta: #f76b15; /* → {orange.9}  rdx */
+  --cta-foreground: #fcfcfc; /* → {gray.1}    rdx */
 
   /* ── Semantic ─────────────────────────────────────────────────────────── */
-  --destructive: #dc2626;             /* → {red.600}   tw  */
+  --destructive: #dc2626; /* → {red.600}   tw  */
 
   /* ── Utilities ────────────────────────────────────────────────────────── */
-  --border: #e2e8f0;                  /* → {slate.200} tw  */
-  --input: #cbd5e1;                   /* → {slate.300} tw  */
-  --ring: #2563eb;                    /* → {blue.600}  tw  */
+  --border: #e2e8f0; /* → {slate.200} tw  */
+  --input: #cbd5e1; /* → {slate.300} tw  */
+  --ring: #2563eb; /* → {blue.600}  tw  */
 
   /* ── Chart Palette ────────────────────────────────────────────────────── */
-  --chart-1: #2563eb;                 /* → {blue.600}  tw  */
-  --chart-2: #f76b15;                 /* → {orange.9}  rdx */
-  --chart-3: #12a594;                 /* → {teal.9}    rdx */
-  --chart-4: #6e56cf;                 /* → {violet.9}  rdx */
-  --chart-5: #ffc53d;                 /* → {amber.9}   rdx */
+  --chart-1: #2563eb; /* → {blue.600}  tw  */
+  --chart-2: #f76b15; /* → {orange.9}  rdx */
+  --chart-3: #12a594; /* → {teal.9}    rdx */
+  --chart-4: #6e56cf; /* → {violet.9}  rdx */
+  --chart-5: #ffc53d; /* → {amber.9}   rdx */
 
   /* ── Sidebar ──────────────────────────────────────────────────────────── */
-  --sidebar: #eff6ff;                 /* → {blue.50}   tw  */
-  --sidebar-foreground: #0f172a;      /* → {slate.900} tw  */
-  --sidebar-primary: #2563eb;         /* → {blue.600}  tw  */
+  --sidebar: #eff6ff; /* → {blue.50}   tw  */
+  --sidebar-foreground: #0f172a; /* → {slate.900} tw  */
+  --sidebar-primary: #2563eb; /* → {blue.600}  tw  */
   --sidebar-primary-foreground: #fcfcfc; /* → {gray.1} rdx  */
-  --sidebar-accent: #e0e7ff;          /* → {indigo.100} tw */
+  --sidebar-accent: #e0e7ff; /* → {indigo.100} tw */
   --sidebar-accent-foreground: #0f172a; /* → {slate.900} tw */
-  --sidebar-border: #e2e8f0;          /* → {slate.200} tw  */
-  --sidebar-ring: #2563eb;            /* → {blue.600}  tw  */
+  --sidebar-border: #e2e8f0; /* → {slate.200} tw  */
+  --sidebar-ring: #2563eb; /* → {blue.600}  tw  */
 
   /* ── Spacing ──────────────────────────────────────────────────────────── */
   --space-xs: 0.25rem;
@@ -123,11 +123,11 @@
   --space-2xl: 3rem;
   --space-3xl: 4rem;
 
-  /* ── Shadows — slate.900 base (#0F172A) for cohesion ───────────────── */
-  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
-  --shadow-md: 0 4px 8px rgba(15, 23, 42, 0.08);
-  --shadow-lg: 0 12px 20px rgba(15, 23, 42, 0.10);
-  --shadow-xl: 0 24px 36px rgba(15, 23, 42, 0.14);
+  /* ── Shadows — MASTER.md spec ────────────────────────────────────── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================================================================
@@ -138,63 +138,63 @@
 
 .dark {
   /* ── Surfaces ─────────────────────────────── tw/rdx references ──────── */
-  --background: #020617;              /* → {slate.950}  tw  */
-  --foreground: #f1f5f9;              /* → {slate.100}  tw  */
+  --background: #020617; /* → {slate.950}  tw  */
+  --foreground: #f1f5f9; /* → {slate.100}  tw  */
 
-  --card: #11131f;                    /* → {indigo.1}   rdx dark */
-  --card-foreground: #f1f5f9;         /* → {slate.100}  tw  */
+  --card: #11131f; /* → {indigo.1}   rdx dark */
+  --card-foreground: #f1f5f9; /* → {slate.100}  tw  */
 
-  --popover: #141726;                 /* → {indigo.2}   rdx dark */
-  --popover-foreground: #f1f5f9;      /* → {slate.100}  tw  */
+  --popover: #141726; /* → {indigo.2}   rdx dark */
+  --popover-foreground: #f1f5f9; /* → {slate.100}  tw  */
 
   /* ── Brand ────────────────────────────────────────────────────────────── */
-  --primary: #70b8ff;                 /* → {blue.11}    rdx dark */
-  --primary-foreground: #fcfcfc;      /* → {gray.1}     rdx */
+  --primary: #70b8ff; /* → {blue.11}    rdx dark */
+  --primary-foreground: #fcfcfc; /* → {gray.1}     rdx */
 
-  --secondary: #182449;              /* → {indigo.3}    rdx dark */
-  --secondary-foreground: #e2e8f0;   /* → {slate.200}   tw  */
+  --secondary: #182449; /* → {indigo.3}    rdx dark */
+  --secondary-foreground: #e2e8f0; /* → {slate.200}   tw  */
 
   /* ── Muted ────────────────────────────────────────────────────────────── */
-  --muted: #141726;                   /* → {indigo.2}   rdx dark */
-  --muted-foreground: #696e77;        /* → {slate.9}    rdx dark */
+  --muted: #141726; /* → {indigo.2}   rdx dark */
+  --muted-foreground: #696e77; /* → {slate.9}    rdx dark */
 
   /* ── Accent / CTA ─────────────────────────────────────────────────────── */
-  --accent: #f76b15;                  /* → {orange.9}   rdx (shared) */
-  --accent-foreground: #020617;       /* → {slate.950}  tw  */
+  --accent: #f76b15; /* → {orange.9}   rdx (shared) */
+  --accent-foreground: #020617; /* → {slate.950}  tw  */
 
-  --cta: #f76b15;                     /* → {orange.9}   rdx (shared) */
-  --cta-foreground: #020617;          /* → {slate.950}  tw  */
+  --cta: #f76b15; /* → {orange.9}   rdx (shared) */
+  --cta-foreground: #020617; /* → {slate.950}  tw  */
 
   /* ── Semantic ─────────────────────────────────────────────────────────── */
-  --destructive: #ff9592;             /* → {red.11}     rdx dark */
+  --destructive: #ff9592; /* → {red.11}     rdx dark */
 
   /* ── Utilities — Glassmorphism translucent ─────────────────────────────── */
-  --border: rgba(255, 255, 255, 0.10);
+  --border: rgba(255, 255, 255, 0.1);
   --input: rgba(255, 255, 255, 0.14);
-  --ring: #70b8ff;                    /* → {blue.11}    rdx dark */
+  --ring: #70b8ff; /* → {blue.11}    rdx dark */
 
   /* ── Chart Palette — vibrant on dark ──────────────────────────────────── */
-  --chart-1: #70b8ff;                 /* → {blue.11}    rdx dark */
-  --chart-2: #f76b15;                 /* → {orange.9}   rdx (shared) */
-  --chart-3: #0bd8b6;                 /* → {teal.11}    rdx dark */
-  --chart-4: #baa7ff;                 /* → {violet.11}  rdx dark */
-  --chart-5: #ffc53d;                 /* → {amber.9}    rdx (shared) */
+  --chart-1: #70b8ff; /* → {blue.11}    rdx dark */
+  --chart-2: #f76b15; /* → {orange.9}   rdx (shared) */
+  --chart-3: #0bd8b6; /* → {teal.11}    rdx dark */
+  --chart-4: #baa7ff; /* → {violet.11}  rdx dark */
+  --chart-5: #ffc53d; /* → {amber.9}    rdx (shared) */
 
   /* ── Sidebar ──────────────────────────────────────────────────────────── */
-  --sidebar: #111113;                 /* → {slate.1}    rdx dark */
-  --sidebar-foreground: #f1f5f9;      /* → {slate.100}  tw  */
-  --sidebar-primary: #70b8ff;         /* → {blue.11}    rdx dark */
+  --sidebar: #111113; /* → {slate.1}    rdx dark */
+  --sidebar-foreground: #f1f5f9; /* → {slate.100}  tw  */
+  --sidebar-primary: #70b8ff; /* → {blue.11}    rdx dark */
   --sidebar-primary-foreground: #fcfcfc; /* → {gray.1}  rdx */
-  --sidebar-accent: #182449;          /* → {indigo.3}   rdx dark */
+  --sidebar-accent: #182449; /* → {indigo.3}   rdx dark */
   --sidebar-accent-foreground: #f1f5f9; /* → {slate.100} tw */
-  --sidebar-border: rgba(255, 255, 255, 0.10);
-  --sidebar-ring: #70b8ff;            /* → {blue.11}    rdx dark */
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #70b8ff; /* → {blue.11}    rdx dark */
 
   /* ── Shadows — deep blue-black for dark mode ──────────────────────────── */
-  --shadow-sm: 0 1px 3px rgba(0, 5, 20, 0.30);
-  --shadow-md: 0 4px 8px rgba(0, 5, 20, 0.40);
-  --shadow-lg: 0 12px 20px rgba(0, 5, 20, 0.40);
-  --shadow-xl: 0 24px 36px rgba(0, 5, 20, 0.50);
+  --shadow-sm: 0 1px 3px rgba(0, 5, 20, 0.3);
+  --shadow-md: 0 4px 8px rgba(0, 5, 20, 0.4);
+  --shadow-lg: 0 12px 20px rgba(0, 5, 20, 0.4);
+  --shadow-xl: 0 24px 36px rgba(0, 5, 20, 0.5);
 }
 
 @layer base {
