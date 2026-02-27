@@ -42,7 +42,10 @@ describe("Button", () => {
       "icon-xs",
       "icon-sm",
       "icon-lg",
-      "responsive",
+      "responsive:xs",
+      "responsive:sm",
+      "responsive:default",
+      "responsive:lg",
     ] as const)("size='%s'가 렌더링된다", (size) => {
       render(<Button size={size}>btn</Button>)
       expect(screen.getByRole("button")).toHaveAttribute("data-size", size)
@@ -52,26 +55,33 @@ describe("Button", () => {
   // ─── Responsive ───────────────────────────────────────
 
   describe("Responsive", () => {
-    it("size 기본값이 responsive이다", () => {
+    it("size 기본값이 default이다", () => {
       render(<Button>btn</Button>)
-      expect(screen.getByRole("button")).toHaveAttribute("data-size", "responsive")
+      expect(screen.getByRole("button")).toHaveAttribute("data-size", "default")
     })
 
-    it("responsive 클래스에 브레이크포인트 프리픽스가 포함된다", () => {
-      render(<Button size="responsive">btn</Button>)
-      const button = screen.getByRole("button")
-      const className = button.className
-
+    it.each([
+      ["responsive:xs", { base: "h-5", lg: "h-6" }],
+      ["responsive:sm", { base: "h-7", lg: "h-8" }],
+      ["responsive:default", { base: "h-8", lg: "h-9" }],
+      ["responsive:lg", { base: "h-9", lg: "h-10" }],
+    ] as const)("%s 클래스에 브레이크포인트 프리픽스가 포함된다", (size, expected) => {
+      render(<Button size={size}>btn</Button>)
+      const className = screen.getByRole("button").className
+      expect(className).toContain(expected.base)
       expect(className).toContain("sm:")
       expect(className).toContain("md:")
-      expect(className).toContain("lg:")
+      expect(className).toContain(`lg:${expected.lg}`)
     })
 
-    it("buttonVariants에서 responsive 클래스를 생성한다", () => {
-      const classes = buttonVariants({ size: "responsive" })
-      expect(classes).toContain("sm:h-8")
-      expect(classes).toContain("md:h-9")
-      expect(classes).toContain("lg:h-10")
+    it.each([
+      ["responsive:xs", "lg:h-6"],
+      ["responsive:sm", "lg:h-8"],
+      ["responsive:default", "lg:h-9"],
+      ["responsive:lg", "lg:h-10"],
+    ] as const)("%s가 lg에서 목표 고정 size에 도달한다", (size, lgClass) => {
+      const classes = buttonVariants({ size })
+      expect(classes).toContain(lgClass)
     })
   })
 

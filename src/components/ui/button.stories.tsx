@@ -17,7 +17,7 @@ const meta = {
     },
     size: {
       control: "select",
-      options: ["xs", "sm", "default", "lg", "icon", "icon-xs", "icon-sm", "icon-lg", "responsive"],
+      options: ["xs", "sm", "default", "lg", "icon", "icon-xs", "icon-sm", "icon-lg", "responsive:xs", "responsive:sm", "responsive:default", "responsive:lg"],
     },
     disabled: { control: "boolean" },
     asChild: { control: "boolean" },
@@ -65,16 +65,50 @@ export const AllSizes: Story = {
 
 // ─── Responsive ─────────────────────────────────────────
 
-export const Responsive: Story = {
-  parameters: {
-    layout: "fullscreen",
-  },
+export const ResponsiveXs: Story = {
+  parameters: { layout: "fullscreen" },
   render: () => (
     <div className="p-8">
       <p className="mb-4 text-sm text-muted-foreground">
-        브라우저 너비를 조절하여 반응형 크기 변화를 확인하세요.
+        responsive:xs — 브라우저 너비를 조절하여 반응형 크기 변화를 확인하세요.
       </p>
-      <Button size="responsive">Responsive Button</Button>
+      <Button size="responsive:xs">Responsive XS</Button>
+    </div>
+  ),
+}
+
+export const ResponsiveSm: Story = {
+  parameters: { layout: "fullscreen" },
+  render: () => (
+    <div className="p-8">
+      <p className="mb-4 text-sm text-muted-foreground">
+        responsive:sm — 브라우저 너비를 조절하여 반응형 크기 변화를 확인하세요.
+      </p>
+      <Button size="responsive:sm">Responsive SM</Button>
+    </div>
+  ),
+}
+
+export const ResponsiveDefault: Story = {
+  parameters: { layout: "fullscreen" },
+  render: () => (
+    <div className="p-8">
+      <p className="mb-4 text-sm text-muted-foreground">
+        responsive:default — 브라우저 너비를 조절하여 반응형 크기 변화를 확인하세요.
+      </p>
+      <Button size="responsive:default">Responsive Default</Button>
+    </div>
+  ),
+}
+
+export const ResponsiveLg: Story = {
+  parameters: { layout: "fullscreen" },
+  render: () => (
+    <div className="p-8">
+      <p className="mb-4 text-sm text-muted-foreground">
+        responsive:lg — 브라우저 너비를 조절하여 반응형 크기 변화를 확인하세요.
+      </p>
+      <Button size="responsive:lg">Responsive LG</Button>
     </div>
   ),
 }
@@ -139,7 +173,7 @@ export const Playground: Story = {
   args: {
     children: "Playground",
     variant: "default",
-    size: "responsive",
+    size: "default",
     disabled: false,
   },
 }
