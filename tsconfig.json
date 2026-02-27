@@ -1,34 +1,55 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    /* ── Language & Environment ── */
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "ESNext"],
+    "jsx": "react-jsx",
+
+    /* ── Module System ── */
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+
+    /* ── Type Checking — strict + extras ── */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "exactOptionalPropertyTypes": true,
+    "erasableSyntaxOnly": true,
+
+    /* ── Output ── */
+    "noEmit": true,
+    "skipLibCheck": true,
     "incremental": true,
+
+    /* ── Paths ── */
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    /* ── Plugins ── */
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.mts",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "claude-talk-to-figma-mcp", "--help"]
+  "exclude": ["node_modules", "claude-talk-to-figma-mcp"]
 }
